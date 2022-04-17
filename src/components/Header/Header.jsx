@@ -30,6 +30,7 @@ const Header = ({ setCoordinates }) => {
                     <Autocomplete
                         onLoad={onLoad}
                         onPlaceChanged={onPlaceChanged}
+                        onUnmount={e => e.target.reset()}
                     >
                         <div className={classes.search}>
                             <div className={classes.searchIcon}>
